@@ -24,10 +24,9 @@ public class Ejemplo08 {
             arreglo1[i] = entrada.nextInt();
         }
 
-        for (int i = 0; i < arreglo1.length; i++) {
-            System.out.printf("La suma del areglo es: %d",
-                    misterio(arreglo1[i], op));
-        }
+        System.out.printf("La suma del areglo es: %d}n",
+                    misterio(arreglo1, op));
+        
 
     }
 
