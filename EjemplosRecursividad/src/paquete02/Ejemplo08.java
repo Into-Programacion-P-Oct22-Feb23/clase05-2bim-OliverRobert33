@@ -5,6 +5,7 @@
 package paquete02;
 
 import java.util.Scanner;
+
 public class Ejemplo08 {
 
     public static void main(String[] args) {
@@ -12,23 +13,22 @@ public class Ejemplo08 {
         // Ingresar por teclado los valores enteros del arreglo
         // Sumar los valores del arreglo, mediante la función misterio
         Scanner entrada = new Scanner(System.in);
-        int [] arreglo1;
-        System.out.println("Ingrese cuantops elementos nescecita en el arreglo: ");
-        int i = entrada.nextInt();
-        arreglo1 = new int[i];
-        
-        for (int f = 0; f < arreglo1.length; f++) {
-            int num;
+        int[] arreglo1;
+
+        System.out.println("Ingrese cuantos elementos nescecita en el arreglo: ");
+        int op = entrada.nextInt();
+        arreglo1 = new int[op];
+
+        for (int i = 0; i < arreglo1.length; i++) {
             System.out.println("Ingrese elementos para llenar el arreglo: ");
-            num = entrada.nextInt();
-            arreglo1[f] = num;
-        
-        
-        for (int j = 0; j < 10; j++) {
-            System.out.printf("La suma del areglo es: %d", arreglo1[f], arreglo1[i]);
+            arreglo1[i] = entrada.nextInt();
         }
-        
+
+        for (int i = 0; i < arreglo1.length; i++) {
+            System.out.printf("La suma del areglo es: %d",
+                    misterio(arreglo1[i], op));
         }
+
     }
 
     public static int misterio(int[] arreglo, int tamanio) {
