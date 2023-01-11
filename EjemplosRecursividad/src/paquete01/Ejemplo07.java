@@ -1,3 +1,4 @@
+
 /*
  * Factorial sin recursividad
  * 5! = 5 * 4 * 3 * 2 * 1
@@ -18,6 +19,7 @@ public class Ejemplo07 {
         } else{
             
             return base * obtenerPotencia(base, exponente - 1);
+            //3 * (3, 2)
         }
     }
 
